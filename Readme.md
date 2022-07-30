@@ -42,8 +42,8 @@ At the moment of writing, the flipper zero ignore the tag and doesnt run the dic
 
 ## Ressources 
 
-<a href="https://nfc.toys/interop-sky.html">[NFC Toys] Skylanders Interoperability</a>
-<a href="https://nfc.toys/data-giants.html">[NFC Toys] Skylanders Data Analyse</a>
-<a href="https://nfc.toys/prac-keys.html">[NFC Toys] Key Generation</a>
-<a href="">[NFC Toys] Writing Your Own Data to Skylanders</a>
-<a href="http://con-mod.com/skylanders-nfc/">[Con Mod] Clonning Skylanders NFC !!! NO HTTPS</a>
+* <a href="https://nfc.toys/interop-sky.html">[NFC Toys] Skylanders Interoperability</a>
+* <a href="https://nfc.toys/data-giants.html">[NFC Toys] Skylanders Data Analyse</a>
+* <a href="https://nfc.toys/prac-keys.html">[NFC Toys] Key Generation</a>
+* <a href="https://nfc.toys/workflow-sky.html">[NFC Toys] Writing Your Own Data to Skylanders</a>
+* <a href="http://con-mod.com/skylanders-nfc/">[Con Mod] Clonning Skylanders NFC !!! NO HTTPS</a>
