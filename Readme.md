@@ -9,7 +9,7 @@ Currently under testing.
 
 First we need to read the Skylanders NFC Toy to retrieve its UID, using Flipper Zero or an app that allow you to do that.
 
-
+![Skylander_UID](https://user-images.githubusercontent.com/22322762/181916763-dfd7f97f-341e-4cc8-898a-5fd77097573f.png)
 
 Then, we need to use the NFC Toys Script <a href="https://nfc.toys/interop-sky.html">"tnp3xxx.py"</a>, to generate the 16 keys which allow us to read sector and data. You can also find it hosted on this repository <a href="scripts/tnp3xxx.py">here</a>
 
