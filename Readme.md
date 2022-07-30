@@ -38,7 +38,7 @@ Then add those 16 keys to you'r "/nfc/assets/mf_classic_dict_user.nfc" file.
 
 I'm adding my keys for each of my own Skylanders Toys into this file <a href="/nfc/assets/skylanders_dict.nfc">here</a>. Feel free to contribute for skylanders owner! 
 
-At the moment of writing, the flipper zero ignore the tag and doesnt run the dictionnary attack, but a pull request was mad yesterday to implement it, feel free to follow it : https://github.com/flipperdevices/flipperzero-firmware/pull/1497
+At the moment of writing, the flipper zero ignore the tag and doesnt run the dictionnary attack, but a pull request was made yesterday to implement it, feel free to follow it : https://github.com/flipperdevices/flipperzero-firmware/pull/1497
 
 ## Ressources 
 
