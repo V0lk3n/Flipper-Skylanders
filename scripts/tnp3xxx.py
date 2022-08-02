@@ -1,8 +1,9 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 ## tnp3xxx.py - Compute a key A
 ##
 ## Written in 2016 and 2017 and 2018 by Vitorio Miliano
+## Updated to Python 3 in 2022 by Adrian 'vifino' Pistol
 ##
 ## To the extent possible under law, the author has dedicated all
 ## copyright and related and neighboring rights to this software to
@@ -13,7 +14,7 @@
 ## Dedication along with this software.  If not, see
 ## <http://creativecommons.org/publicdomain/zero/1.0/>.
 
-import binascii, re, struct, sys
+import re, struct, sys
 
 uidre = re.compile('^[0-9a-f]{8}$', re.IGNORECASE)
 magic_nums = [2, 3, 73, 1103, 2017, 560381651, 12868356821]
@@ -45,11 +46,11 @@ def calc_keya(uid, sector):
         raise ValueError('invalid sector (0-15)')
 
     PRE = magic_nums[0] * magic_nums[0] * magic_nums[1] * magic_nums[3] * magic_nums[6]
-    ints = [ord(a) for a in uid.decode('hex')] + [sector]
+    ints = [b for b in bytes.fromhex(uid)] + [sector]
 
     key = pseudo_crc48(PRE, ints)
 
-    return binascii.hexlify(struct.pack('<Q', key))[0:12]
+    return struct.pack('<Q', key).hex()[0:12]
 
 if __name__ == '__main__':
     if len(sys.argv) > 1:
@@ -57,6 +58,6 @@ if __name__ == '__main__':
         for sector in range(0, 16):
             keysa.append(calc_keya(sys.argv[1], sector))
         if len(sys.argv) > 2 and sys.argv[2] == '-eml':
-            print ('0'*20+'\n'+('0'*32+'\n')*3).join(keysa).join([(sys.argv[1]+'0'*24+'\n')+(('0'*32+'\n')*2), '0'*20])
+            print('0'*20+'\n'+('0'*32+'\n')*3).join(keysa).join([(sys.argv[1]+'0'*24+'\n')+(('0'*32+'\n')*2), '0'*20])
         else:
-            print '\n'.join(keysa)
+            print('\n'.join(keysa))
