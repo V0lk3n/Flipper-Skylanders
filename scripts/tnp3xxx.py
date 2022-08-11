@@ -56,7 +56,7 @@ if __name__ == '__main__':
     if len(sys.argv) > 1:
         keysa = []
         for sector in range(0, 16):
-            keysa.append(calc_keya(sys.argv[1], sector))
+            keysa.append(calc_keya(sys.argv[1], sector).upper())
         if len(sys.argv) > 2 and sys.argv[2] == '-eml':
             print('0'*20+'\n'+('0'*32+'\n')*3).join(keysa).join([(sys.argv[1]+'0'*24+'\n')+(('0'*32+'\n')*2), '0'*20])
         else:

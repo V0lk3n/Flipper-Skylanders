@@ -15,23 +15,23 @@ Then, we need to use the NFC Toys Script <a href="https://nfc.toys/interop-sky.h
 
 ```
 ┌──(v0lk3n㉿lab)-[~]
-└─$ python2 tnp3xxx.py 2453be1f
-4b0b20107ccb
-ba50b997d1b8
-9c3d6dc4067b
-0f0b876ded9a
-43d12fca431d
-d0e7c563a8fc
-f68a11307f3f
-65bcfb9994de
-fd08aad6c9d1
-6e3e407f2230
-4853942cf5f3
-db657e851e12
-97bfd622b095
-04893c8b5b74
-22e4e8d88cb7
-b1d202716756
+└─$ python3 scripts/tnp3xxx.py 2453be1f
+4B0B20107CCB
+BA50B997D1B8
+9C3D6DC4067B
+0F0B876DED9A
+43D12FCA431D
+D0E7C563A8FC
+F68A11307F3F
+65BCFB9994DE
+FD08AAD6C9D1
+6E3E407F2230
+4853942CF5F3
+DB657E851E12
+97BFD622B095
+04893C8B5B74
+22E4E8D88CB7
+B1D202716756
 ```
 
 Then add those 16 keys to you'r "/nfc/assets/mf_classic_dict_user.nfc" file.
