@@ -1,13 +1,13 @@
 # Flipper Skylanders
 
-This repository store Skylanders Keys to read sector and data of a Skylanders NFC Toys.
+This repository stores Skylanders Keys to read sector and data of Skylanders NFC Toys.
 
 Currently under testing.
 
 
 ## How to retrieve the 16 keys 
 
-First we need to read the Skylanders NFC Toy to retrieve its UID, using Flipper Zero or an app that allow you to do that.
+First, we need to read the Skylanders NFC Toy to retrieve its UID, using Flipper Zero or an app that allows you to do that.
 
 ![Skylander_UID](https://user-images.githubusercontent.com/22322762/181916763-dfd7f97f-341e-4cc8-898a-5fd77097573f.png)
 
@@ -34,13 +34,13 @@ DB657E851E12
 B1D202716756
 ```
 
-Then add those 16 keys to you'r "/nfc/assets/mf_classic_dict_user.nfc" file.
+Then, add those 16 keys to you'r "/nfc/assets/mf_classic_dict_user.nfc" file.
 
-I'm adding my keys for each of my own Skylanders Toys into this file <a href="/nfc/assets/skylanders_dict.nfc">here</a>. Feel free to contribute for skylanders owner! 
+I'm adding my keys for each of my own Skylanders Toys into this file <a href="https://github.com/V0lk3n/Flipper-Skylanders/blob/main/nfc/assets/mf_classic_dict_user.nfc">here</a>. Feel free to contribute for Skylanders owner! 
 
-At the moment of writing, the flipper zero ignore the tag and doesnt run the dictionnary attack, but a pull request was made yesterday to implement it, feel free to follow it : https://github.com/flipperdevices/flipperzero-firmware/pull/1497
+At the moment of writing, the Flipper Zero ignores the tag and doesn't run the dictionary attack, but a pull request was made yesterday to implement it. Feel free to follow it : https://github.com/flipperdevices/flipperzero-firmware/pull/1497
 
-## Ressources 
+## Resources 
 
 * <a href="https://nfc.toys/interop-sky.html">[NFC Toys] Skylanders Interoperability</a>
 * <a href="https://nfc.toys/data-giants.html">[NFC Toys] Skylanders Data Analyse</a>
