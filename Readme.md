@@ -41,6 +41,13 @@ First, we need to read the Disney Infinity NFC Toy to retrieve its UID, using Fl
 
 Then, we need to use the NFC Toys Script <a href="https://nfc.toys/interop-inf.html">"infsha.py"</a>, to generate the key which allow us to read sector and data. You can also find it hosted on this repository <a href="scripts/infsha.py">here</a>
 
+```
+┌──(v0lk3n㉿lab)-[~]
+└─$ python3 scripts/infsha.py 048376728B3A80
+9327436F1966 
+```
+Then, add the one key to your "/nfc/assets/mf_classic_dict_user.nfc" file.
+
 I'm adding my keys for each of my own Toys into this file <a href="https://github.com/V0lk3n/Flipper-Skylanders/blob/main/nfc/assets/mf_classic_dict_user.nfc">here</a>. Feel free to contribute!
 
 Flipper zero now run the dictionnary attack on the skylanders nfc tags. 
