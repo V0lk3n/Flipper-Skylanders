@@ -56,7 +56,9 @@ Thanks to this pull request: https://github.com/flipperdevices/flipperzero-firmw
 ## Resources 
 
 * <a href="https://nfc.toys/interop-sky.html">[NFC Toys] Skylanders Interoperability</a>
-* <a href="https://nfc.toys/data-giants.html">[NFC Toys] Skylanders Data Analyse</a>
+* <a href="https://nfc.toys/interop-inf.html">[NFC Toys] Disney Infinity Interoperability</a>
+* <a href="https://nfc.toys/data-giants.html">[NFC Toys] Skylanders Data Analysis</a>
 * <a href="https://nfc.toys/prac-keys.html">[NFC Toys] Key Generation</a>
 * <a href="https://nfc.toys/workflow-sky.html">[NFC Toys] Writing Your Own Data to Skylanders</a>
-* <a href="http://con-mod.com/skylanders-nfc/">[Con Mod] Clonning Skylanders NFC !!! NO HTTPS</a>
+* <a href="https://nfc.toys/workflow-inf.html">[NFC Toys] Writing Your Own Data to Disney Infinity</a>
+* <a href="http://con-mod.com/skylanders-nfc/">[Con Mod] Cloning Skylanders NFC !!! NO HTTPS</a>
