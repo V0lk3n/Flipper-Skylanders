@@ -39,7 +39,7 @@ Then, add those 16 keys to your "/nfc/assets/mf_classic_dict_user.nfc" file.
 
 First, we need to read the Disney Infinity NFC Toy to retrieve its UID, using Flipper Zero or an app that allows you to do that.
 
-Then, we need to use the NFC Toys Script <a href="https://nfc.toys/#new-interoperability-for-infinity">"infsha.py"</a>, to generate the key which allow us to read sector and data. You can also find it hosted on this repository <a href="scripts/infsha.py">here</a>
+Then, we need to use the NFC Toys Script <a href="https://nfc.toys/interop-inf.html">"infsha.py"</a>, to generate the key which allow us to read sector and data. You can also find it hosted on this repository <a href="scripts/infsha.py">here</a>
 
 I'm adding my keys for each of my own Toys into this file <a href="https://github.com/V0lk3n/Flipper-Skylanders/blob/main/nfc/assets/mf_classic_dict_user.nfc">here</a>. Feel free to contribute!
 
