@@ -1,10 +1,10 @@
-# Flipper Skylanders
+# Flipper Infinity Skylanders
 
-This repository stores Skylanders A-Keys to read sector and data of Skylanders NFC Toys.
+This repository stores Skylanders and Disney Infinity A-Keys to read sector and data of Skylanders and Disney Infinity NFC Toys.
 
 Currently under testing.
 
-## How to retrieve the 16 keys 
+## Skylanders - How to retrieve the 16 keys 
 
 First, we need to read the Skylanders NFC Toy to retrieve its UID, using Flipper Zero or an app that allows you to do that.
 
@@ -35,7 +35,20 @@ B1D202716756
 
 Then, add those 16 keys to your "/nfc/assets/mf_classic_dict_user.nfc" file.
 
-I'm adding my keys for each of my own Skylanders Toys into this file <a href="https://github.com/V0lk3n/Flipper-Skylanders/blob/main/nfc/assets/mf_classic_dict_user.nfc">here</a>. Feel free to contribute for Skylanders owner! 
+## Disney Infinity - How to Retrieve the Key
+
+First, we need to read the Disney Infinity NFC Toy to retrieve its UID, using Flipper Zero or an app that allows you to do that.
+
+Then, we need to use the NFC Toys Script <a href="https://nfc.toys/interop-inf.html">"infsha.py"</a>, to generate the key which allow us to read sector and data. You can also find it hosted on this repository <a href="scripts/infsha.py">here</a>
+
+```
+┌──(v0lk3n㉿lab)-[~]
+└─$ python3 scripts/infsha.py 048376728B3A80
+9327436F1966 
+```
+Then, add the one key to your "/nfc/assets/mf_classic_dict_user.nfc" file.
+
+I'm adding my keys for each of my own Toys into this file <a href="https://github.com/V0lk3n/Flipper-Skylanders/blob/main/nfc/assets/mf_classic_dict_user.nfc">here</a>. Feel free to contribute!
 
 Flipper zero now run the dictionnary attack on the skylanders nfc tags. 
 Thanks to this pull request: https://github.com/flipperdevices/flipperzero-firmware/pull/1497
@@ -43,7 +56,9 @@ Thanks to this pull request: https://github.com/flipperdevices/flipperzero-firmw
 ## Resources 
 
 * <a href="https://nfc.toys/interop-sky.html">[NFC Toys] Skylanders Interoperability</a>
-* <a href="https://nfc.toys/data-giants.html">[NFC Toys] Skylanders Data Analyse</a>
+* <a href="https://nfc.toys/interop-inf.html">[NFC Toys] Disney Infinity Interoperability</a>
+* <a href="https://nfc.toys/data-giants.html">[NFC Toys] Skylanders Data Analysis</a>
 * <a href="https://nfc.toys/prac-keys.html">[NFC Toys] Key Generation</a>
 * <a href="https://nfc.toys/workflow-sky.html">[NFC Toys] Writing Your Own Data to Skylanders</a>
-* <a href="http://con-mod.com/skylanders-nfc/">[Con Mod] Clonning Skylanders NFC !!! NO HTTPS</a>
+* <a href="https://nfc.toys/workflow-inf.html">[NFC Toys] Writing Your Own Data to Disney Infinity</a>
+* <a href="http://con-mod.com/skylanders-nfc/">[Con Mod] Cloning Skylanders NFC !!! NO HTTPS</a>
